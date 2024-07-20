@@ -19,7 +19,8 @@ Zer0 to Advance Js
 Call Stack in JavaScript
 The call stack is a mechanism JavaScript uses to keep track of function calls. It works like a stack of plates, where the last plate placed on the top is the first one to be removed. Here's how it works in simple terms:
 
-Function Call:
+Function Call:                                                                                                                         ![Uploading image.png…]()
+
 
 When a function is called, it's added to the call stack.
 Execute Function:
