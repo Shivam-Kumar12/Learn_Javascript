@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Arrays in JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Multidimensional Arrays in JavaScript</h1>
+    <p>
+        Multidimensional arrays are arrays that contain other arrays as their elements. They are used to represent matrices, grids, or other data structures that require multiple dimensions.
+    </p>
+    <h3>Creating Multidimensional Arrays</h3>
+    <p>Multidimensional arrays can be created by nesting arrays within arrays. For example:</p>
+    <pre><code>
+// 2D array (matrix)
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+    </code></pre>
+
+    <h3>Accessing Elements</h3>
+    <p>Elements in a multidimensional array can be accessed using multiple indices. For example:</p>
+    <pre><code>
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix[0][0]); // Output: 1
+console.log(matrix[1][2]); // Output: 6
+console.log(matrix[2][1]); // Output: 8
+    </code></pre>
+
+    <h3>Iterating Over Multidimensional Arrays</h3>
+    <p>You can use nested loops to iterate over the elements of a multidimensional array. For example:</p>
+    <pre><code>
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    console.log(`Element at [${i}][${j}]:`, matrix[i][j]);
+  }
+}
+    </code></pre>
+
+    <h3>Modifying Elements</h3>
+    <p>Elements in a multidimensional array can be modified by specifying their indices. For example:</p>
+    <pre><code>
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+matrix[0][0] = 10;
+matrix[1][2] = 20;
+
+console.log(matrix);
+// Output: 
+// [
+//   [10, 2, 3],
+//   [4, 5, 20],
+//   [7, 8, 9]
+// ]
+    </code></pre>
+</body>
+</html>

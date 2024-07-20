@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shallow and Deep Copies in JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Shallow and Deep Copies in JavaScript</h1>
+    
+    <h3>Shallow Copy</h3>
+    <p>
+        A shallow copy means that only the first level of the object or array is copied. The nested objects or arrays within the copied object/array are still referenced.
+    </p>
+    <pre><code>
+// Using Object.assign() for a shallow copy
+const originalObject = { a: 1, b: { c: 2 } };
+const shallowCopy = Object.assign({}, originalObject);
+console.log(shallowCopy); // Output: { a: 1, b: { c: 2 } }
+
+// Using spread operator for a shallow copy
+const originalArray = [1, [2, 3]];
+const shallowArrayCopy = [...originalArray];
+console.log(shallowArrayCopy); // Output: [1, [2, 3]]
+    </code></pre>
+
+    <h3>Deep Copy</h3>
+    <p>
+        A deep copy means that all levels of the object or array are copied, and the nested objects or arrays within the copied object/array are not referenced. Instead, new copies of all nested objects or arrays are created.
+    </p>
+    <pre><code>
+// Using JSON methods for a deep copy
+const originalObject2 = { a: 1, b: { c: 2 } };
+const deepCopy = JSON.parse(JSON.stringify(originalObject2));
+console.log(deepCopy); // Output: { a: 1, b: { c: 2 } }
+    </code></pre>
+
+    <h3>Examples</h3>
+    <p>Shallow Copy Example:</p>
+    <pre><code>
+const shallowCopyExample = { x: 1, y: { z: 2 } };
+const shallowCopyOfExample = { ...shallowCopyExample };
+
+shallowCopyOfExample.y.z = 5;
+console.log(shallowCopyExample.y.z); // Output: 5 (The original object's nested property is affected)
+    </code></pre>
+
+    <p>Deep Copy Example:</p>
+    <pre><code>
+const deepCopyExample = { x: 1, y: { z: 2 } };
+const deepCopyOfExample = JSON.parse(JSON.stringify(deepCopyExample));
+
+deepCopyOfExample.y.z = 5;
+console.log(deepCopyExample.y.z); // Output: 2 (The original object's nested property is not affected)
+    </code></pre>
+</body>
+</html>
