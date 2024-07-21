@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Loop Example</title>
+  <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive">
+  <h1>For Loop Example</h1>
+  <p>Open the console to see the output of the for loop.</p>
+
+  <h2>About the For Loop</h2>
+  <p>The <code>for</code> loop is used to execute a block of code a specific number of times. It consists of three parts: the initialization, the condition, and the final expression. The initialization is executed once before the loop starts, the condition is checked before each iteration, and the final expression is executed after each iteration.</p>
+  
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+for (initialization; condition; final-expression) {
+  // Code to execute in each iteration
+}
+    </code>
+  </pre>
+
+  <h3>Example</h3>
+  <p>Here is an example of a <code>for</code> loop that logs the numbers from 0 to 4:</p>
+  <pre>
+    <code>
+for (let i = 0; i < 5; i++) {
+  console.log(`Count is: ${i}`);
+}
+    </code>
+  </pre>
+
+  <h3>Example Explained</h3>
+  <p>In the example above:</p>
+  <ul>
+    <li>The initialization <code>let i = 0;</code> sets the variable <code>i</code> to <code>0</code>.</li>
+    <li>The condition <code>i < 5</code> is checked before each iteration. If it is true, the loop body is executed.</li>
+    <li>The final expression <code>i++</code> increments <code>i</code> by <code>1</code> after each iteration.</li>
+    <li>The loop continues until the condition <code>i < 5</code> becomes false.</li>
+  </ul>
+
+  <h3>Preventing Infinite Loops</h3>
+  <p>Ensure that the condition will eventually become false to avoid creating an infinite loop. For example:</p>
+  <pre>
+    <code>
+for (let i = 0; true; i++) {
+  console.log("This will run forever!");
+}
+    </code>
+  </pre>
+
+  <h3>Exiting the Loop Prematurely</h3>
+  <p>You can use the <code>break</code> statement to exit a <code>for</code> loop before the condition becomes false:</p>
+  <pre>
+    <code>
+for (let i = 0; i < 5; i++) {
+  console.log(`Count is: ${i}`);
+  if (i === 3) {
+    break; // Exit the loop when i is 3
+  }
+}
+    </code>
+  </pre>
+
+  <h3>Skipping Iterations</h3>
+  <p>You can use the <code>continue</code> statement to skip the current iteration and move to the next one:</p>
+  <pre>
+    <code>
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue; // Skip the rest of the code in this iteration when i is 3
+  }
+  console.log(`Count is: ${i}`);
+}
+    </code>
+  </pre>
+</body>
+</html>
