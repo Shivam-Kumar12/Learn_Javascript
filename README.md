@@ -13,7 +13,42 @@ Zer0 to Advance Js
       <li>null</li>
     </ul>
 
-    
+
+#Diffrence between Function and method
+In JavaScript, the terms "function" and "method" are often used, but they have distinct meanings and uses:
+
+Function
+Definition: A function is a block of code designed to perform a particular task. It is a standalone piece of code that can be defined once and executed any number of times.
+Usage: Functions are invoked using their names.
+function functionName(parameters) {
+  // function body
+}
+
+// Example
+function add(a, b) {
+  return a + b;
+}
+
+let sum = add(5, 3); // sum is 8
+
+Method
+Definition: A method is a function that is associated with an object. Methods are essentially functions that are properties of an object.
+Usage: Methods are invoked using the object's name followed by a dot and the method name.
+let objectName = {
+  methodName: function(parameters) {
+    // method body
+  }
+};
+
+// Example
+let calculator = {
+  add: function(a, b) {
+    return a + b;
+  }
+};
+
+let sum = calculator.add(5, 3); // sum is 8
+
 # ADVANCE
 
 Call Stack in JavaScript
