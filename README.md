@@ -55,7 +55,7 @@ let sum = calculator.add(5, 3); // sum is 8
 Call Stack in JavaScript
 The call stack is a mechanism JavaScript uses to keep track of function calls. It works like a stack of plates, where the last plate placed on the top is the first one to be removed. Here's how it works in simple terms:
 
-Function Call:                                                                                                                         ![Uploading image.png…]()
+# Function Call:                                                                                                                     
 
 
 When a function is called, it's added to the call stack.
