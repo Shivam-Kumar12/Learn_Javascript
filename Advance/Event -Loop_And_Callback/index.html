@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop and Callback Queue</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Event Loop and Callback Queue</h1>
+    
+    <h2>Event Loop</h2>
+    <p>The <strong>Event Loop</strong> is a fundamental part of JavaScript's concurrency model. It enables JavaScript to perform non-blocking operations, even though JavaScript itself is single-threaded. The event loop continuously checks the call stack and the callback queue and executes the functions from the callback queue once the call stack is empty.</p>
+    
+    <h3>How It Works:</h3>
+    <ol>
+        <li>JavaScript executes the code in the call stack.</li>
+        <li>If there are asynchronous operations (e.g., <code>setTimeout</code>, <code>fetch</code>), their callbacks are placed in the callback queue.</li>
+        <li>When the call stack is empty, the event loop moves callbacks from the callback queue to the call stack and executes them.</li>
+    </ol>
+    
+    <h2>Callback Queue</h2>
+    <p>The <strong>Callback Queue</strong> (also known as the task queue) holds the functions that are waiting to be executed after the current code has finished executing. Callbacks are added to the callback queue when an asynchronous operation completes.</p>
+    
+    <h3>Types of Queues:</h3>
+    <ul>
+        <li><strong>Macro Task Queue:</strong> Includes tasks like <code>setTimeout</code>, <code>setInterval</code>, and I/O operations.</li>
+        <li><strong>Micro Task Queue:</strong> Includes tasks like <code>Promise</code> callbacks and <code>MutationObserver</code> callbacks. Micro tasks are processed before the macro tasks.</li>
+    </ul>
+    
+    <h3>Example</h3>
+    <p>In the provided JavaScript file, you'll see examples of how the event loop handles asynchronous tasks using <code>setTimeout</code> and <code>setInterval</code>. Open the console to see how different tasks are scheduled and executed.</p>
+</body>
+</html>

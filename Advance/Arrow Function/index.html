@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Arrow Functions in JavaScript</h1>
+    
+    <h2>What are Arrow Functions?</h2>
+    <p>Arrow functions, introduced in ES6 (ECMAScript 2015), provide a shorter syntax for writing function expressions. They are also known as "fat arrow functions" because of the <code>=></code> syntax.</p>
+    
+    <h2>Syntax</h2>
+    <pre>
+        <code>
+// Basic Syntax
+(param1, param2, ..., paramN) => { statements }
+(param1, param2, ..., paramN) => expression
+
+// If the function has only one parameter, you can omit the parentheses
+singleParam => { statements }
+singleParam => expression
+
+// If the function has no parameters, you must use parentheses
+() => { statements }
+() => expression
+        </code>
+    </pre>
+
+    <h2>Examples</h2>
+    <pre>
+        <code>
+// Example 1: Arrow function with multiple parameters
+const add = (a, b) => {
+    return a + b;
+};
+
+// Example 2: Arrow function with a single parameter
+const square = x => x * x;
+
+// Example 3: Arrow function with no parameters
+const sayHello = () => {
+    console.log('Hello!');
+};
+
+// Example 4: Arrow function returning an object
+const getPerson = (name, age) => ({ name: name, age: age });
+        </code>
+    </pre>
+
+    <h2>Features and Differences from Regular Functions</h2>
+    <ul>
+        <li><strong>Shorter Syntax:</strong> Arrow functions provide a concise syntax for writing functions.</li>
+        <li><strong>No <code>this</code> Binding:</strong> Arrow functions do not have their own <code>this</code> context. Instead, they inherit <code>this</code> from the parent scope at the time they are defined. This is useful for maintaining the correct <code>this</code> value in nested functions.</li>
+        <li><strong>No <code>arguments</code> Object:</strong> Arrow functions do not have their own <code>arguments</code> object. You can use rest parameters (<code>...args</code>) to access arguments in arrow functions.</li>
+        <li><strong>Cannot be used as Constructors:</strong> Arrow functions cannot be used with the <code>new</code> keyword, as they do not have a <code>prototype</code> property.</li>
+        <li><strong>No <code>yield</code> Keyword:</strong> Arrow functions cannot be used as generators.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Functions</title>
+  <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive">
+  <h1>JavaScript Functions</h1>
+  <p>Open the console to see the output of the function examples.</p>
+
+  <h2>About Functions</h2>
+  <p>A function is a block of code designed to perform a particular task. Functions are executed when they are called (invoked). This allows for code reuse and better organization.</p>
+  
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+// Function Declaration
+function functionName(parameters) {
+  // Code to be executed
+}
+
+// Function Call
+functionName(arguments);
+    </code>
+  </pre>
+
+  <h3>Example 1: Function Declaration and Invocation</h3>
+  <p>Here is an example of a function that adds two numbers:</p>
+  <pre>
+    <code>
+function add(a, b) {
+  return a + b;
+}
+
+let sum = add(2, 3);
+console.log(`Sum is: ${sum}`); // Output: Sum is: 5
+    </code>
+  </pre>
+
+  <h3>Example 2: Arrow Function</h3>
+  <p>Arrow functions provide a shorter syntax for writing functions:</p>
+  <pre>
+    <code>
+const subtract = (a, b) => {
+  return a - b;
+};
+
+let difference = subtract(10, 4);
+console.log(`Difference is: ${difference}`); // Output: Difference is: 6
+    </code>
+  </pre>
+
+</body>
+</html>

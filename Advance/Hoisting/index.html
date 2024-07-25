@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Hoisting</title>
+  <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive">
+  <h1>JavaScript Hoisting</h1>
+  <p>Open the console to see the output of the hoisting examples.</p>
+
+  <h2>About Hoisting</h2>
+  <p>Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase. This means that you can use functions and variables before they are declared.</p>
+  
+  <h3>Variable Hoisting</h3>
+  <p>Variables declared with <code>var</code> are hoisted to the top of their function scope. However, the assignment is not hoisted.</p>
+  <pre>
+    <code>
+// Example of Variable Hoisting
+console.log(hoistedVar); // Output: undefined
+var hoistedVar = 'This variable is hoisted';
+console.log(hoistedVar); // Output: This variable is hoisted
+    </code>
+  </pre>
+
+  <h3>Function Hoisting</h3>
+  <p>Function declarations are hoisted to the top of their containing scope, meaning you can call a function before it is declared.</p>
+  <pre>
+    <code>
+// Example of Function Hoisting
+hoistedFunction(); // Output: This function is hoisted
+
+function hoistedFunction() {
+  console.log('This function is hoisted');
+}
+    </code>
+  </pre>
+
+</body>
+</html>

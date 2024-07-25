@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>setInterval, setTimeout, clearInterval, and clearTimeout Example</title>
+  <script src="script.js" defer></script>
+</head>
+<body style="font-family: cursive">
+  <h1>JavaScript setInterval, setTimeout, clearInterval, and clearTimeout Example</h1>
+  <p>Open the console to see the output of the interval and timeout messages.</p>
+
+  <h2>About setInterval</h2>
+  <p>The <code>setInterval</code> method in JavaScript is used to repeatedly call a function or execute a code snippet, with a fixed time delay between each call. It continues to execute the code until <code>clearInterval</code> is called or the window is closed.</p>
+
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+setInterval(function, delay);
+    </code>
+  </pre>
+  <p><strong>Parameters:</strong></p>
+  <ul>
+    <li><code>function</code>: The function to be executed.</li>
+    <li><code>delay</code>: The time, in milliseconds (thousandths of a second), the timer should wait before the specified function is executed.</li>
+  </ul>
+
+  <h2>About clearInterval</h2>
+  <p>The <code>clearInterval</code> method in JavaScript is used to stop the execution of a function that was set up using <code>setInterval</code>. You need to pass the identifier returned by <code>setInterval</code> to <code>clearInterval</code>.</p>
+
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+clearInterval(intervalID);
+    </code>
+  </pre>
+  <p><strong>Parameters:</strong></p>
+  <ul>
+    <li><code>intervalID</code>: The identifier returned by <code>setInterval</code> that specifies which interval to clear.</li>
+  </ul>
+
+  <h2>About setTimeout</h2>
+  <p>The <code>setTimeout</code> method in JavaScript is used to call a function or execute a code snippet after a specified delay. It only executes the code once after the delay has elapsed.</p>
+
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+setTimeout(function, delay);
+    </code>
+  </pre>
+  <p><strong>Parameters:</strong></p>
+  <ul>
+    <li><code>function</code>: The function to be executed.</li>
+    <li><code>delay</code>: The time, in milliseconds (thousandths of a second), the timer should wait before the specified function is executed.</li>
+  </ul>
+
+  <h2>About clearTimeout</h2>
+  <p>The <code>clearTimeout</code> method in JavaScript is used to cancel the execution of a function that was set up using <code>setTimeout</code>. You need to pass the identifier returned by <code>setTimeout</code> to <code>clearTimeout</code>.</p>
+
+  <h3>Syntax</h3>
+  <pre>
+    <code>
+clearTimeout(timeoutID);
+    </code>
+  </pre>
+  <p><strong>Parameters:</strong></p>
+  <ul>
+    <li><code>timeoutID</code>: The identifier returned by <code>setTimeout</code> that specifies which timeout to clear.</li>
+  </ul>
+</body>
+</html>
