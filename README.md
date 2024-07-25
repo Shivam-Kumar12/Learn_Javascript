@@ -14,7 +14,8 @@ Zer0 to Advance Js
     </ul>
 
 
-#Diffrence between Function and method
+# Diffrence between Function and method
+
 In JavaScript, the terms "function" and "method" are often used, but they have distinct meanings and uses:
 
 Function
