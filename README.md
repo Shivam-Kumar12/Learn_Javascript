@@ -71,9 +71,10 @@ The program then continues executing the next function in the stack.
 The arguments object in JavaScript is an array-like object that represents the arguments passed to a function. It is available within all non-arrow functions and contains all the arguments that were passed to the function, regardless of how many or what type they are.
 
 function exampleFunction ()
-
 {
+
   console.log(arguments);
+  
 }
 # Important Notes
 .Not Available in Arrow Functions
