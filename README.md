@@ -75,6 +75,7 @@ function exampleFunction() {
 }
 # Important Notes
 .Not Available in Arrow Functions
+
 .Use Rest Parameters for Modern JavaScript
 
 The arguments object is useful for handling functions with a variable number of arguments but is less common in modern JavaScript due to the flexibility provided by rest parameters.
