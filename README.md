@@ -36,6 +36,32 @@ Zer0 to Advance Js
      let bar = 0 ?? 'default';
      console.log(bar); // 0 (because 0 is not null or undefined)
 
+
+# Difference Between `null` and `undefined` in JavaScript
+
+1. `null`:
+   - Definition: `null` is a special value in JavaScript that explicitly indicates the absence of any object value. It represents "nothing" or "no value."
+   - Use Case: `null` is typically used to intentionally indicate that a variable should not have a value or that an object is absent.
+   - Type: The type of `null` is `object`. This is considered a design error in JavaScript, but it's something to be aware of.
+   - Example:
+     ```javascript
+     let foo = null;
+     console.log(foo); // Output: null
+     ```
+
+2. `undefined`:
+   - Definition: `undefined` is a primitive value automatically assigned to variables that have been declared but not yet assigned a value. It also represents the absence of a defined value.
+   - Use Case: `undefined` is used to indicate that a variable has not been initialized, or a function does not return a value. It can also occur when accessing object properties that do not exist.
+   - Type: The type of `undefined` is `undefined`.
+   - Example:
+     ```javascript
+     let bar;
+     console.log(bar); // Output: undefined
+
+     let obj = {};
+     console.log(obj.property); // Output: undefined (property does not exist)
+     ```
+
 # Diffrence between Function and method
 
 In JavaScript, the terms "function" and "method" are often used, but they have distinct meanings and uses:
