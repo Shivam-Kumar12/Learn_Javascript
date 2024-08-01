@@ -12,6 +12,7 @@ Zer0 to Advance Js
       <li>undefined</li>
       <li>null</li>
     </ul>
+    
 # Difference Between `null` and "nullish" in JavaScript
 
 1. `null`:
