@@ -124,7 +124,9 @@ function exampleFunction ()
   console.log(arguments);
   
 }
+
 .....*Important Notes*........
+
 .Not Available in Arrow Functions
 
 .Use Rest Parameters for Modern JavaScript
