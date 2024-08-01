@@ -12,7 +12,28 @@ Zer0 to Advance Js
       <li>undefined</li>
       <li>null</li>
     </ul>
+# Difference Between `null` and "nullish" in JavaScript
 
+1. `null`:
+   - Definition: `null` is a special value in JavaScript that represents the intentional absence of any object value. It is one of the primitive types in JavaScript.
+   - Use Case: It is often used to indicate that a variable has been explicitly set to have no value or no object.
+   - Type: The type of `null` is `object` (this is considered a quirk of JavaScript).
+   - Example:
+     ```javascript
+     let foo = null;
+     console.log(foo); // null
+     ```
+
+2. Nullish:
+   - Definition: "Nullish" refers to a group of two specific values: `null` and `undefined`. The term is used primarily in the context of the Nullish Coalescing Operator (`??`), which is designed to work with these two values.
+   - Use Case: The Nullish Coalescing Operator is used to provide a default value when dealing with potentially `null` or `undefined` values. It is different from other operators like `||` because it only considers `null` and `undefined` as nullish values, while `||` considers any falsy value (e.g., `0`, `""`, `false`, etc.).
+   - Example:
+     ```javascript
+     let foo = null ?? 'default';
+     console.log(foo); // 'default'
+
+     let bar = 0 ?? 'default';
+     console.log(bar); // 0 (because 0 is not null or undefined)
 
 # Diffrence between Function and method
 
