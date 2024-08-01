@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Special Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .operator-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .operator-list li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .operator-list code {
+            background: #eaeaea;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .description {
+            margin: 5px 0 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Special Operators</h1>
+    <p>JavaScript includes several special operators that provide additional functionality and convenience. Here are some notable ones:</p>
+
+    <h2>Operators</h2>
+    <ul class="operator-list">
+        <li><code>??</code> : Nullish Coalescing Operator
+            <div class="description">
+                Returns the right-hand operand when the left-hand operand is <code>null</code> or <code>undefined</code>; otherwise, it returns the left-hand operand.
+            </div>
+        </li>
+        <li><code>?.</code> : Optional Chaining
+            <div class="description">
+                Allows accessing deeply nested properties without explicitly checking if each reference in the chain is <code>null</code> or <code>undefined</code>.
+            </div>
+        </li>
+        <li><code>?:</code> : Conditional (Ternary) Operator
+            <div class="description">
+                A shorthand for the <code>if</code>-<code>else</code> statement, returns one of two values depending on a condition.
+            </div>
+        </li>
+        <li><code>typeof</code> : Type Operator
+            <div class="description">
+                Returns a string indicating the type of the unevaluated operand.
+            </div>
+        </li>
+        <li><code>instanceof</code> : Instance Operator
+            <div class="description">
+                Checks if an object is an instance of a particular class or constructor.
+            </div>
+        </li>
+        <li><code>in</code> : Property Check Operator
+            <div class="description">
+                Checks if a specified property exists in an object or its prototype chain.
+            </div>
+        </li>
+        <li><code>delete</code> : Deletion Operator
+            <div class="description">
+                Removes a property from an object.
+            </div>
+        </li>
+    </ul>
+
+    <h2>Examples</h2>
+    <p>See the console for examples of these operators in action.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

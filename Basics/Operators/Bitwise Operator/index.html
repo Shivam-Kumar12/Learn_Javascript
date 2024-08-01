@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bitwise and Shift Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .operator-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .operator-list li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .operator-list code {
+            background: #eaeaea;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .description {
+            margin: 5px 0 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Bitwise and Shift Operators</h1>
+    <p>Bitwise operators are used to perform operations on binary representations of numbers. They operate on 32-bit binary numbers. Shift operators, which are a type of bitwise operator, shift the bits of a number left or right. Here are the common bitwise and shift operators in JavaScript:</p>
+
+    <h2>Operators</h2>
+    <ul class="operator-list">
+        <li><code>&</code> : Bitwise AND</li>
+        <li><code>|</code> : Bitwise OR</li>
+        <li><code>^</code> : Bitwise XOR</li>
+        <li><code>~</code> : Bitwise NOT</li>
+        <li><code>&lt;&lt;</code> : Left Shift
+            <div class="description">
+                Shifts the bits of the first operand to the left by the number of positions specified by the second operand. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.
+            </div>
+        </li>
+        <li><code>&gt;&gt;</code> : Right Shift
+            <div class="description">
+                Shifts the bits of the first operand to the right by the number of positions specified by the second operand. Bits shifted off to the right are discarded. The leftmost bits are filled with the sign bit (0 for positive numbers, 1 for negative numbers).
+            </div>
+        </li>
+        <li><code>&gt;&gt;&gt;</code> : Unsigned Right Shift
+            <div class="description">
+                Shifts the bits of the first operand to the right by the number of positions specified by the second operand. Bits shifted off to the right are discarded. The leftmost bits are always filled with zeros, regardless of the sign of the initial number.
+            </div>
+        </li>
+    </ul>
+
+    <h2>Examples</h2>
+    <p>See the console for examples of these operators in action.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
