@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map, Filter, Reduce</title>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </head>
+  <body style="font-family: cursive">
+    <div class="container">
+      <h1>Map, Filter, Reduce</h1>
+      <h2>Map</h2>
+      <p>The <code>map()</code> method creates a new array populated with the results of calling a provided function on every element in the calling array.</p>
+      <pre><code>const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8]</code></pre>
+
+      <h2>Filter</h2>
+      <p>The <code>filter()</code> method creates a new array with all elements that pass the test implemented by the provided function.</p>
+      <pre><code>const numbers = [1, 2, 3, 4];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]</code></pre>
+
+      <h2>Reduce</h2>
+      <p>The <code>reduce()</code> method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.</p>
+      <pre><code>const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); // 10</code></pre>
+    </div>
+  </body>
+</html>

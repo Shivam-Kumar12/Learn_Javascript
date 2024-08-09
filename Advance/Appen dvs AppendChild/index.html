@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append vs AppendChild</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Understanding Append and AppendChild in JavaScript</h1>
+    <p>In JavaScript, <code>append()</code> and <code>appendChild()</code> are methods used to add nodes or text to the DOM. While they serve similar purposes, they have distinct differences and use cases.</p>
+
+    <div id="appendExample">
+        <h2>Using append()</h2>
+        <p>The <code>append()</code> method can accept multiple nodes and strings, appending them all as children of the specified parent element. This method is more flexible as it allows direct insertion of text strings and multiple elements at once.</p>
+    </div>
+
+    <div id="appendChildExample">
+        <h2>Using appendChild()</h2>
+        <p>The <code>appendChild()</code> method only accepts a single node (element or text node) at a time. It cannot accept plain text directly; to insert text, you need to create a text node first.</p>
+    </div>
+
+    <footer>
+        <p>Explore the differences between <code>append()</code> and <code>appendChild()</code> through the examples above.</p>
+    </footer>
+</body>
+</html>
